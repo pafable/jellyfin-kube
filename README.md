@@ -31,6 +31,9 @@ terraform init
 terraform apply -var-file <YOUR_VARS_FILE>.tfvars
 ```
 
+Once you have successfully deployed to your kubernetes cluster. Point your jellyfin domain name specified in the tfvars file to the IP of your k8s controller. 
+You can also edit your client's host file to resolve the domain name to the controller's IP if making DNS entries is not possible.
+
 ## Removing from a kubernetes cluster
 ```commandline
 terraform destroy -var-file <YOUR_VARS_FILE>.tfvars
