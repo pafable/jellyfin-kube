@@ -14,7 +14,6 @@ Create a tfvars file that contains the follwing.
 ```commandline
 config_path          = "/path/to/kubeconfig/file"
 config_context       = "KUBERNETES CONTEXT TO USE"
-controller_ips       = ["IP OF CONTROLLER(S)"]
 domain               = "YOUR URL"
 jellyfin_cache_path  = "/path/to/jellyfin/cache/on/nfs"
 jellyfin_config_path = "/path/to/jellyfin/config/on/nfs"
