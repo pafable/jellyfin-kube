@@ -22,12 +22,6 @@ variable "container_image" {
   default     = "docker.io/jellyfin/jellyfin:10.11.6"
 }
 
-variable "controller_ips" {
-  description = "IP addresses of controllers"
-  type        = list(string)
-  default     = []
-}
-
 variable "cpu_request" {
   description = "CPU request"
   type        = string
@@ -37,12 +31,6 @@ variable "cpu_request" {
 variable "domain" {
   description = "Domain"
   type        = string
-}
-
-variable "gateway_class_name" {
-  description = "Gateway class name"
-  type        = string
-  default     = "door"
 }
 
 variable "jellyfin_cache_path" {

@@ -7,6 +7,7 @@ This implementation uses an NFS share to store media content for Jellyfin and re
 - Gateway API controller (I'm using Envoy Gateway)
 - NFS server
 - Worker node with 8gb of memory and 4 core CPU
+- Terraform 1.14.4 or greater
 
 ## Creating the tfvars file
 Create a tfvars file that contains the follwing.
